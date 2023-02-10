@@ -36,7 +36,7 @@ let header = $(`
         <li><a class="white-text" href="index.html">Home</a></li>
         <li><a class="white-text" href="experience.html">Experience</a></li>
         
-        <li><a class="white-text" href="research.html">Research</a></li>
+        <li><a class="white-text" href="research.html">Certifications</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
 
         <!--TOGGLE FOR LIGHT/DARK MODE-->
@@ -63,7 +63,7 @@ let header = $(`
 <li><a href="index.html">Home</a></li>
 <li><a href="experience.html">Experience</a></li>
 
-<li><a href="research.html">Research</a></li>
+<li><a href="research.html">Certifications</a></li>
 <li><a href="education.html">Education</a></li>
 
 <!--TOGGLE FOR LIGHT/DARK MODE-->
