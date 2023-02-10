@@ -38,30 +38,6 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
     </script>
     <script>
-        $(function() {
-            var reserach = [];
-
-            $.getJSON('assets/json/research.json', function(data) {
-
-                $.each(data.researchPapers, function(i, f) {
-                    var tblrow = "<tr>" + "<td class=" + 'researchTitleName' + ">" + "<a href=" + '#0' + " class=" + 'paperTitle' + ">" + f.title + "</a>" +
-                        "<div>" + f.authors + "</div>" + "<div>" + f.conferences + "<span class=" + 'resYearDisplay' + ">" + f.year + "</span>" +
-                        "</div>" + "<div class=" + 'empty' + ">" + "<a href=" + '#popup1' + " class=" + 'cite' + ">" + ",," + "</a>" + "</div>" +
-                        "</td>" + "<td class=" + 'researchY' + ">" + "<span>" + f.researchYr + "</span>" + "</td>" + "</tr>"
-                    $(tblrow).appendTo("#researchDetailsTable tbody")
-                });
-
-                $.each(data.cite, function(i, j) {
-                    var cite = "<tr>" + "<td class=" + 'left-cell' + ">" + "MLA" + "</td>" + "<td class=" + 'right-cell' + ">" + j.mla + "</td>" + "</tr>" +
-                        "<tr>" + "<td class=" + 'left-cell' + ">" + "APA" + "</td>" + "<td class=" + 'right-cell' + ">" + j.apa + "</td>" + "</tr>" +
-                        "<tr>" + "<td class=" + 'left-cell' + ">" + "Chicago" + "</td>" + "<td class=" + 'right-cell' + ">" + j.chicago + "</td>" + "</tr>" +
-                        "<tr>" + "<td class=" + 'left-cell' + ">" + "Harvard" + "</td>" + "<td class=" + 'right-cell' + ">" + j.harvard + "</td>" + "</tr>" +
-                        "<tr>" + "<td class=" + 'left-cell' + ">" + "Vancouver" + "</td>" + "<td class=" + 'right-cell' + ">" + j.vancouver + "</td>" + "</tr>" +
-                        "<tr class=" + 'lastRow' + ">" + "<td>" + "</td>" + "<td>" + "<a href=" + 'assets/BibTeX/cite.bib' + " class=" + 'bibtex' + ">" + "BibTeX" + "</a>" + "</td>" + "</tr>"
-                    $(cite).appendTo("#citing tbody")
-                });
-            });
-        });
     </script>
 </head>
 
